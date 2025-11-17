@@ -3,7 +3,7 @@
 > vite
 
 
-  VITE v5.4.20  ready in 210 ms
+  VITE v5.4.20  ready in 230 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.21.130:3000/
@@ -63,11 +63,6 @@ node_modules/three-globe/dist/three-globe.mjs:20:21: ERROR: [plugin: vite:dep-pr
     at /home/workspace/node_modules/esbuild/lib/main.js:1353:9
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
   errors: [Getter/Setter],
-  warnings: [Getter/Setter]
-}
-
-Node.js v24.8.0
-Setter],
   warnings: [Getter/Setter]
 }
 
