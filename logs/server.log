@@ -3,7 +3,72 @@
 > vite
 
 
-  VITE v5.4.20  ready in 203 ms
+  VITE v5.4.20  ready in 210 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.21.130:3000/
+✘ [ERROR] Missing "./webgpu" specifier in "three" package [plugin vite:dep-pre-bundle]
+
+    node_modules/three-globe/dist/three-globe.mjs:19:64:
+      19 │ ...ageInstancedBufferAttribute, WebGPURenderer } from 'three/webgpu';
+         ╵                                                       ~~~~~~~~~~~~~~
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1150:20:
+      1150 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46935:13)
+    at handlePlugins (/home/workspace/node_modules/esbuild/lib/main.js:1150:21)
+    at buildOrContextImpl (/home/workspace/node_modules/esbuild/lib/main.js:873:5)
+    at Object.buildOrContext (/home/workspace/node_modules/esbuild/lib/main.js:699:5)
+    at /home/workspace/node_modules/esbuild/lib/main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (/home/workspace/node_modules/esbuild/lib/main.js:2032:27)
+    at Object.context (/home/workspace/node_modules/esbuild/lib/main.js:1874:58)
+    at prepareEsbuildOptimizerRun (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:50927:33)
+
+✘ [ERROR] Missing "./tsl" specifier in "three" package [plugin vite:dep-pre-bundle]
+
+    node_modules/three-globe/dist/three-globe.mjs:20:21:
+      20 │ import * as tsl from 'three/tsl';
+         ╵                      ~~~~~~~~~~~
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/esbuild/lib/main.js:1150:20:
+      1150 │       let promise = setup({
+           ╵                     ^
+
+    at setup (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:46935:13)
+    at handlePlugins (/home/workspace/node_modules/esbuild/lib/main.js:1150:21)
+    at buildOrContextImpl (/home/workspace/node_modules/esbuild/lib/main.js:873:5)
+    at Object.buildOrContext (/home/workspace/node_modules/esbuild/lib/main.js:699:5)
+    at /home/workspace/node_modules/esbuild/lib/main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (/home/workspace/node_modules/esbuild/lib/main.js:2032:27)
+    at Object.context (/home/workspace/node_modules/esbuild/lib/main.js:1874:58)
+    at prepareEsbuildOptimizerRun (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:50927:33)
+
+/home/workspace/node_modules/esbuild/lib/main.js:1472
+  let error = new Error(text);
+              ^
+
+Error: Build failed with 2 errors:
+node_modules/three-globe/dist/three-globe.mjs:19:64: ERROR: [plugin: vite:dep-pre-bundle] Missing "./webgpu" specifier in "three" package
+node_modules/three-globe/dist/three-globe.mjs:20:21: ERROR: [plugin: vite:dep-pre-bundle] Missing "./tsl" specifier in "three" package
+    at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+    at /home/workspace/node_modules/esbuild/lib/main.js:945:25
+    at /home/workspace/node_modules/esbuild/lib/main.js:1353:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  errors: [Getter/Setter],
+  warnings: [Getter/Setter]
+}
+
+Node.js v24.8.0
+Setter],
+  warnings: [Getter/Setter]
+}
+
+Node.js v24.8.0

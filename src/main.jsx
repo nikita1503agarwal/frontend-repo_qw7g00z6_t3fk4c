@@ -13,6 +13,7 @@ import User from './pages/User'
 import Auth from './pages/Auth'
 import AdminModeration from './pages/AdminModeration'
 import Test from './Test'
+import GlobeSite from './pages/GlobeSite'
 
 function NotFound(){
   return (
@@ -41,6 +42,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/test" element={<Test />} />
           <Route path="*" element={<NotFound />} />
         </Route>
+        {/* Separate site: bare route without Layout chrome */}
+        <Route path="/globe" element={<GlobeSite />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
